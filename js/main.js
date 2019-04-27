@@ -109,21 +109,14 @@ $(document).ready(function() {
 	// Resize Event
 
 	$(window).on('load', function() {
-		if ($(this).width() <= 1440) {
+		if ($(this).width() <= 1199) {
 			$('.head-toggle').prependTo('.head-row');
 		} else {
 			$('.head-toggle').prependTo('.head');
 		}
-		//if ($(this).width() <= 575) {
-			//$('.head-toggle').removeClass('js-toggle');
-			//$('.head-toggle').addClass('js-call');
-		//} else {
-			//$('.head-toggle').removeClass('js-call');
-			//$('.head-toggle').addClass('js-toggle');
-		//}
 	});
 	$(window).on('resize', function() {
-		if ($(this).width() <= 1440) {
+		if ($(this).width() <= 1199) {
 			$('.head-toggle').prependTo('.head-row');
 		} else {
 			$('.head-toggle').prependTo('.head');

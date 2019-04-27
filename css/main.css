@@ -289,8 +289,44 @@ h2 {
   color: #fff;
   background: none;
   border: none;
-  border-bottom: 2px solid #dcb36e;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
   padding: 12px 0;
+}
+
+.input input:focus + span:after {
+  -webkit-box-shadow: 0 0 7px 1px rgba(221, 180, 105, 0.5), inset 0 0 7px 1px rgba(221, 180, 105, 0.5);
+          box-shadow: 0 0 7px 1px rgba(221, 180, 105, 0.5), inset 0 0 7px 1px rgba(221, 180, 105, 0.5);
+}
+
+.input input:focus + span svg {
+  -webkit-filter: drop-shadow(0 0 7px 1px rgba(221, 180, 105, 0.5));
+          filter: drop-shadow(0 0 7px 1px rgba(221, 180, 105, 0.5));
+}
+
+.input span {
+  display: block;
+  width: 31px;
+  height: 31px;
+}
+
+.input span:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #ddb469;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.input span img, .input span svg {
+  position: absolute;
+  right: 0;
+  width: 31px;
+  height: 31px;
 }
 
 .checkbox {
@@ -426,7 +462,7 @@ h2 {
 .nav {
   position: fixed;
   display: block;
-  top: inherit;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -617,7 +653,6 @@ h2 {
   position: relative;
   display: block;
   height: 100vh;
-  min-height: 960px;
   background: url("../img/main_bg.jpg") no-repeat center top;
 }
 
@@ -637,7 +672,6 @@ h2 {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   height: 100vh;
-  min-height: 960px;
   z-index: 2;
 }
 
@@ -891,7 +925,6 @@ h2 {
 .about {
   position: relative;
   height: 100vh;
-  min-height: 960px;
   background: url("../img/about_bg.jpg") no-repeat center top;
 }
 
@@ -915,7 +948,6 @@ h2 {
           flex-flow: column wrap;
   width: 50%;
   height: 100vh;
-  min-height: 960px;
   padding: 0 150px 0 0;
 }
 
@@ -1208,7 +1240,6 @@ h2 {
 .discount {
   position: relative;
   height: 100vh;
-  min-height: 960px;
   background: url("../img/discount_bg.jpg") no-repeat center top;
 }
 
@@ -1228,7 +1259,6 @@ h2 {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   height: 100vh;
-  min-height: 960px;
   z-index: 1;
 }
 
@@ -1272,19 +1302,12 @@ h2 {
   width: 100%;
 }
 
-.discount-form .field-line .input img {
-  position: absolute;
-  right: 0;
-  width: 31px;
-  height: 31px;
-}
-
 .discount-form .btn {
   margin: 9px auto;
 }
 
 .discount-form .checkbox {
-  width: 229px;
+  width: 235px;
   margin: 30px auto 0;
 }
 
@@ -1293,7 +1316,6 @@ h2 {
 .contacts {
   position: relative;
   height: 100vh;
-  min-height: 960px;
 }
 
 .contacts #map {
@@ -1307,11 +1329,14 @@ h2 {
 }
 
 .contacts-row {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -1321,14 +1346,13 @@ h2 {
   -webkit-flex-flow: column wrap;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  width: 585px;
   height: 100vh;
-  min-height: 960px;
-  z-index: 2;
 }
 
 .contacts-title {
+  position: relative;
   margin: 0 0 120px;
+  z-index: 2;
 }
 
 .contacts-title h2 {
@@ -1336,6 +1360,7 @@ h2 {
 }
 
 .contacts-block {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1359,6 +1384,7 @@ h2 {
           transform: matrix(1, 0, -0.05, 1, 0, 0);
   padding: 0 135px;
   margin: 0 15px;
+  z-index: 2;
 }
 
 .contacts-item {
@@ -1382,7 +1408,7 @@ h2 {
 /* -- Popup -- */
 .popup {
   position: fixed;
-  top: inherit;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1609,19 +1635,63 @@ h2 {
 }
 
 @media only screen and (max-width: 1440px) {
-  .head-toggle {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-}
-
-@media only screen and (max-width: 1199px) {
   h1 {
     font-size: 80px;
   }
   h2 {
     font-size: 60px;
+  }
+  .head-toggle {
+    left: 25px;
+  }
+  .main {
+    background-size: auto 100%;
+  }
+  .main-title {
+    margin: 0 0 50px;
+  }
+  .about {
+    background-size: auto 100%;
+  }
+  .about-row {
+    padding: 0 100px 0 0;
+  }
+  .about-title {
+    margin: 0 0 40px;
+  }
+  .about-text {
+    max-height: 320px;
+  }
+  .about-note {
+    margin: 60px -100px 0 0;
+  }
+  .discount {
+    background-size: auto 100%;
+  }
+  .discount-title {
+    margin: 0 0 150px;
+  }
+  .contacts-title {
+    margin: 0 0 60px;
+  }
+  .contacts-block {
+    width: 350px;
+    height: 450px;
+    padding: 0 50px;
+  }
+  .contacts-item:not(:last-child) {
+    margin: 0 0 50px;
+  }
+  .contacts-item span {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .head-toggle {
+    position: relative;
+    top: auto;
+    left: auto;
   }
   .nav {
     background: #0f0f0f;
@@ -1661,17 +1731,6 @@ h2 {
   .worker-slider .slick-dots {
     margin: 0;
     bottom: -40px;
-  }
-  .about-row {
-    padding: 0 100px 0 0;
-  }
-  .about-note {
-    margin: 70px -170px 0 0;
-  }
-  .contacts-block {
-    width: 380px;
-    height: 500px;
-    padding: 0 70px;
   }
   .foot-row {
     -webkit-box-pack: justify;
@@ -1729,8 +1788,8 @@ h2 {
     padding: 0;
     z-index: 2;
   }
-  .about-title {
-    margin: 0 0 40px;
+  .about-text {
+    max-height: 400px;
   }
   .about-note {
     margin: 50px 0 0;
@@ -1787,9 +1846,6 @@ h2 {
   }
   .discount-row {
     z-index: 2;
-  }
-  .discount-title {
-    margin: 0 0 150px;
   }
   .discount-form {
     width: 400px;
@@ -1886,7 +1942,7 @@ h2 {
   }
   .about {
     min-height: 675px;
-    background-position: 90% top;
+    background-position: 98% top;
   }
   .about-row {
     min-height: 675px;
@@ -1898,7 +1954,7 @@ h2 {
     display: none;
   }
   .program {
-    padding: 90px 0;
+    padding: 50px 0 90px;
   }
   .program-slider {
     padding: 0 70px;
@@ -1911,7 +1967,7 @@ h2 {
   }
   .discount {
     min-height: 675px;
-    background-position: 60% top;
+    background-position: 54% top;
   }
   .discount-row {
     min-height: 675px;
@@ -1921,9 +1977,6 @@ h2 {
   }
   .contacts {
     min-height: 675px;
-  }
-  .contacts-title {
-    margin: 0 0 60px;
   }
   .foot-copyright {
     width: 100%;
@@ -2171,7 +2224,6 @@ h2 {
     padding: 55px 0;
   }
   .contacts-row {
-    width: 197px;
     height: auto;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
