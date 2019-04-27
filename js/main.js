@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 
 	$('.program-slider').slick({
-		dots: true,
+		dots: false,
 		arrows: false,
 		infinite: true,
 		slidesToShow: 3,
@@ -23,12 +23,14 @@ $(document).ready(function() {
 			{
 				breakpoint: 991,
 				settings: {
+					dots: true,
 					slidesToShow: 2
 				}
 			},
 			{
 				breakpoint: 767,
 				settings: {
+					dots: true,
 					slidesToShow: 1
 				}
 			}
