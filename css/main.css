@@ -653,7 +653,7 @@ h2 {
   position: relative;
   display: block;
   height: 100vh;
-  background: url("../img/main_bg.jpg") no-repeat center top;
+  background: url("../img/main_bg.jpg") no-repeat right top;
 }
 
 .main-row {
@@ -1636,7 +1636,7 @@ h2 {
 
 @media only screen and (max-width: 1440px) {
   h1 {
-    font-size: 70px;
+    font-size: 75px;
   }
   h2 {
     font-size: 60px;
@@ -1649,6 +1649,18 @@ h2 {
   }
   .main-title {
     margin: 80px 0 40px;
+  }
+  .main-discount-percent {
+    font-size: 90px;
+  }
+  .main-discount-text {
+    font-size: 15px;
+    margin: 5px 0 0 30px;
+  }
+  .main-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
   }
   .about {
     background-size: auto 100%;
@@ -1744,6 +1756,9 @@ h2 {
 }
 
 @media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 70px;
+  }
   h2 {
     font-size: 55px;
   }
