@@ -1,11 +1,16 @@
 ymaps.ready(function(){
-	var myMap = new ymaps.Map('map', {
+	var navMap = new ymaps.Map('nav-map', {
+		center: [53.202416, 50.120163],
+		zoom: 14,
+		controls: []
+	});
+	var contactsMap = new ymaps.Map('contacts-map', {
 		center: [53.201147, 50.089228],
 		zoom: 14,
 		controls: []
-	}),
-	
-	myPlacemark = new ymaps.Placemark([53.202416, 50.120163], {
+	});
+
+	myPlacemark1 = new ymaps.Placemark([53.202416, 50.120163], {
 		hintContent: 'Мужская спа-студия «Элизиум»'
 	}, {
 		iconLayout: 'default#image',
@@ -13,13 +18,23 @@ ymaps.ready(function(){
 		iconImageSize: [50, 62],
 		iconImageOffset: [-25, -55]
 	});
-	myMap.geoObjects.add(myPlacemark);
+	myPlacemark2 = new ymaps.Placemark([53.202416, 50.120163], {
+		hintContent: 'Мужская спа-студия «Элизиум»'
+	}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'img/icons/map.svg',
+		iconImageSize: [50, 62],
+		iconImageOffset: [-25, -55]
+	});
+
+	navMap.geoObjects.add(myPlacemark1);
+	contactsMap.geoObjects.add(myPlacemark2);
 
 	function onResizeMap() {
 		if ($(window).width() <= '1440') {
-			myMap.setCenter([53.202416, 50.120163]);
+			contactsMap.setCenter([53.202416, 50.120163]);
 		} else {
-			myMap.setCenter([53.201147, 50.089228]);
+			contactsMap.setCenter([53.201147, 50.089228]);
 		}
 	} onResizeMap();
 
