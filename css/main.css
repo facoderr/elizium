@@ -457,6 +457,15 @@ h2 {
   opacity: .4;
 }
 
+[class*="ymaps-2"][class*="-ground-pane"] {
+  -webkit-filter: grayscale(1) invert(100%);
+          filter: grayscale(1) invert(100%);
+}
+
+[class*="ymaps-2"][class*="-copyrights-pane"] {
+  opacity: 0;
+}
+
 /* -- End General -- */
 /* -- Header -- */
 .nav {
@@ -1316,6 +1325,7 @@ h2 {
 .contacts {
   position: relative;
   height: 100vh;
+  background: #161616;
 }
 
 .contacts #map {
@@ -1324,7 +1334,7 @@ h2 {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .7;
+  opacity: .3;
   z-index: 1;
 }
 
