@@ -676,7 +676,7 @@ h2 {
 }
 
 .main-title {
-  margin: 0 0 70px;
+  margin: 80px 0 70px;
 }
 
 .main-discount {
@@ -1636,7 +1636,7 @@ h2 {
 
 @media only screen and (max-width: 1440px) {
   h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
   h2 {
     font-size: 60px;
@@ -1648,7 +1648,7 @@ h2 {
     background-size: auto 100%;
   }
   .main-title {
-    margin: 0 0 50px;
+    margin: 80px 0 40px;
   }
   .about {
     background-size: auto 100%;
@@ -1744,9 +1744,6 @@ h2 {
 }
 
 @media only screen and (max-width: 991px) {
-  h1 {
-    font-size: 70px;
-  }
   h2 {
     font-size: 55px;
   }
