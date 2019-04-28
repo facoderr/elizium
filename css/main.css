@@ -1614,15 +1614,32 @@ h2 {
 }
 
 .page-animation {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-.page-animation.animated {
+.page-animation.animatedUp {
   opacity: 0;
   -webkit-transform: translateY(-30px);
       -ms-transform: translateY(-30px);
           transform: translateY(-30px);
+}
+
+.page-animation.animatedDown {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.page-animation.page-program-text, .page-animation.page-program-info {
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.page-animation.page-program-btn {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .page-title {
