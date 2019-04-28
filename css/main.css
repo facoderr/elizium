@@ -295,13 +295,13 @@ h2 {
 }
 
 .input input:focus + span:after {
-  -webkit-box-shadow: 0 0 7px 1px rgba(221, 180, 105, 0.5), inset 0 0 7px 1px rgba(221, 180, 105, 0.5);
-          box-shadow: 0 0 7px 1px rgba(221, 180, 105, 0.5), inset 0 0 7px 1px rgba(221, 180, 105, 0.5);
+  -webkit-box-shadow: 0 0 7px 1px rgba(220, 179, 110, 0.5), inset 0 0 7px 1px rgba(220, 179, 110, 0.5);
+          box-shadow: 0 0 7px 1px rgba(220, 179, 110, 0.5), inset 0 0 7px 1px rgba(220, 179, 110, 0.5);
 }
 
 .input input:focus + span svg {
-  -webkit-filter: drop-shadow(0 0 7px 1px rgba(221, 180, 105, 0.5));
-          filter: drop-shadow(0 0 7px 1px rgba(221, 180, 105, 0.5));
+  -webkit-filter: drop-shadow(0 0 7px 1px rgba(220, 179, 110, 0.5));
+          filter: drop-shadow(0 0 7px 1px rgba(220, 179, 110, 0.5));
 }
 
 .input span {
@@ -317,7 +317,7 @@ h2 {
   bottom: 0;
   left: 0;
   height: 2px;
-  background: #ddb469;
+  background: #dcb36e;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -450,7 +450,7 @@ h2 {
 }
 
 .btn:hover {
-  background: #ddb469;
+  background: #dcb36e;
 }
 
 .btn:hover:after {
@@ -544,14 +544,14 @@ h2 {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #ddb469;
+  background: #dcb36e;
   opacity: 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 .nav-menu-link:hover {
-  color: #ddb469;
+  color: #dcb36e;
 }
 
 .nav-menu-link.active:after {
@@ -763,8 +763,8 @@ h2 {
   width: 40px;
   height: 40px;
   font-size: 14px;
-  color: #ddb469;
-  border: 3px solid #ddb469;
+  color: #dcb36e;
+  border: 3px solid #dcb36e;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   margin: 0 17px 0 0;
@@ -880,7 +880,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #ddb469;
+  background: #dcb36e;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -1009,7 +1009,7 @@ h2 {
 }
 
 .about-text .simplebar-scrollbar:before {
-  background: #ddb469;
+  background: #dcb36e;
   -webkit-border-radius: 2.5px;
           border-radius: 2.5px;
   opacity: 1;
@@ -1043,7 +1043,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #ddb469;
+  background: #dcb36e;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -1228,7 +1228,7 @@ h2 {
 .interior-slider .slick-dots li.slick-active button {
   width: 100%;
   height: 100%;
-  background: #ddb469;
+  background: #dcb36e;
 }
 
 .interior-slider .slide {
@@ -1647,10 +1647,48 @@ h2 {
   font: 68px/56px "TTBluescreensBold", sans-serif;
 }
 
+.page-pagination {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  top: -webkit-calc(46% - 115px);
+  top: calc(46% - 115px);
+  right: 151px;
+  width: 25px;
+  height: 230px;
+  color: #dcb36e;
+  font: 18px/1 "GothamProMedium", sans-serif;
+}
+
+.page-pagination:after {
+  content: '';
+  position: absolute;
+  top: -webkit-calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: 2px;
+  height: 100px;
+  background: #745f4c;
+}
+
 .page-foot {
   position: absolute;
   right: 162px;
-  bottom: 80px;
+  bottom: 50px;
   left: 378px;
   z-index: 11;
 }
@@ -1772,8 +1810,8 @@ h2 {
 }
 
 .popup-call-form input:focus {
-  -webkit-box-shadow: 0 0 7px 1px rgba(221, 180, 105, 0.5), inset 0 0 7px 1px rgba(221, 180, 105, 0.5);
-          box-shadow: 0 0 7px 1px rgba(221, 180, 105, 0.5), inset 0 0 7px 1px rgba(221, 180, 105, 0.5);
+  -webkit-box-shadow: 0 0 7px 1px rgba(220, 179, 110, 0.5), inset 0 0 7px 1px rgba(220, 179, 110, 0.5);
+          box-shadow: 0 0 7px 1px rgba(220, 179, 110, 0.5), inset 0 0 7px 1px rgba(220, 179, 110, 0.5);
 }
 
 .popup-call-form input:focus::-webkit-input-placeholder {
@@ -1998,6 +2036,79 @@ h2 {
   .contacts-item span {
     font-size: 40px;
   }
+  .page-head {
+    right: 50px;
+    height: 165px;
+  }
+  .page-nav {
+    width: 290px;
+    padding: 50px 0;
+  }
+  .page-nav .nav-menu-link {
+    font-size: 28px;
+    padding: 0 40px;
+  }
+  .page-socials {
+    bottom: 30px;
+  }
+  .page-socials a {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+  }
+  .page-full:after {
+    right: 40%;
+  }
+  .page-program-text {
+    width: 60%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 50px 0 0;
+    margin: 50px 0 20px;
+  }
+  .page-program-info {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 50px;
+  }
+  .page-program-time img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 0;
+  }
+  .page-program-btn .btn {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .page-section {
+    padding: 55px 30px;
+  }
+  .page-title {
+    font-size: 60px;
+  }
+  .page-pagination {
+    top: -webkit-calc(46% - 80px);
+    top: calc(46% - 80px);
+    right: 39px;
+    height: 160px;
+  }
+  .page-pagination:after {
+    top: -webkit-calc(50% - 35px);
+    top: calc(50% - 35px);
+    height: 70px;
+  }
+  .page-foot {
+    right: 50px;
+    bottom: 30px;
+    left: 320px;
+  }
+  .page-foot .foot-row {
+    font-size: 13px;
+  }
+  .page-foot .foot-developer a:after {
+    bottom: 1px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2044,6 +2155,76 @@ h2 {
   .worker-slider .slick-dots {
     margin: 0;
     bottom: -40px;
+  }
+  .page-head {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    right: 37px;
+    left: 37px;
+  }
+  .page-head .head-toggle {
+    display: block;
+  }
+  .page-nav {
+    display: none;
+  }
+  .page-full {
+    width: 100%;
+    height: auto;
+  }
+  .page-full:after {
+    right: 0;
+  }
+  .page-program {
+    background: none;
+  }
+  .page-program .page-section {
+    background: url(../img/page/1.jpg) no-repeat center top fixed;
+    background-size: auto 100%;
+  }
+  .page-program-text {
+    width: 100%;
+    line-height: 30px;
+  }
+  .page-program-info {
+    line-height: 30px;
+  }
+  .page-program-btn {
+    position: relative;
+    z-index: 2;
+  }
+  .page-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    height: auto !important;
+    padding: 100px 37px;
+  }
+  .page-title {
+    width: 100%;
+    margin: 80px 0 0;
+  }
+  .page-pagination {
+    display: none;
+  }
+  .page-foot {
+    display: none;
+  }
+  .page + .foot {
+    display: block;
   }
   .foot-row {
     -webkit-box-pack: justify;
@@ -2188,6 +2369,9 @@ h2 {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+  .page-title {
+    font-size: 55px;
   }
   .foot {
     padding: 50px 0;
@@ -2563,6 +2747,40 @@ h2 {
   .contacts-item span {
     font-size: 32px;
     margin: 0;
+  }
+  .page-head {
+    height: 75px;
+  }
+  .page-head .head-toggle {
+    display: block;
+  }
+  .page-program-text {
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .page-program-info {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 30px;
+  }
+  .page-program-time img {
+    width: 20px;
+    height: 20px;
+  }
+  .page-program-btn .btn {
+    width: 140px;
+    height: 40px;
+    font-size: 10px;
+    margin: 5px 6.5px;
+  }
+  .page-section {
+    padding: 75px 37px;
+  }
+  .page-title {
+    font-size: 42px;
+    margin: 15px 0 0;
   }
   .popup-call-title {
     font-size: 42px;
