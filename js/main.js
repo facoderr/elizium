@@ -1,5 +1,35 @@
 $(document).ready(function() {
 
+	// Fullpage Event
+
+	var delay = 300;
+	var timeoutId;
+	var animationIsFinished = false;
+	$('#fullpage').fullpage({
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		sectionSelector: '.page-section',
+		verticalCentered: false,
+		afterLoad: function(origin, destination, direction) {
+			$('.page-section.fp-completely .page-animation').removeClass('animated');
+		},
+		onLeave: function(origin, destination, direction){
+
+			$('.page-section.active .page-animation').addClass('animated');
+
+			clearTimeout(timeoutId);
+
+			timeoutId = setTimeout(function(){
+				animationIsFinished = true;
+
+				fullpage_api.moveTo(destination.index + 1);
+			}, delay);
+			console.log(animationIsFinished);
+			return animationIsFinished;
+		},
+	});
+
+	//
+
 	// Slider Event
 	$('.worker-slider').slick({
 		dots: true,
@@ -130,6 +160,8 @@ $(document).ready(function() {
 	$(window).on('load', function() {
 		$('.js-pulse').fadeOut();
 		$('.js-preloader').delay(400).fadeOut('slow');
+		$('.nav-menu').clone().prependTo('.page-nav');
+		$('.foot-socials-list a').clone().appendTo('.page-socials');
 	});
 
 	//
