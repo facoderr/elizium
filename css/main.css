@@ -1648,7 +1648,7 @@ h2 {
 }
 
 .page-about-list ul {
-  padding: 5px 0;
+  padding: 5px 0 5px 5px;
 }
 
 .page-about-list li {
@@ -1683,6 +1683,8 @@ h2 {
 }
 
 .page-about-list li:after {
+  top: -webkit-calc(50% - 30px);
+  top: calc(50% - 30px);
   width: 60px;
   height: 60px;
   border: 1px solid #dcb36e;
@@ -2300,6 +2302,8 @@ h2 {
     height: 25px;
   }
   .page-about-list li:after {
+    top: -webkit-calc(50% - 25px);
+    top: calc(50% - 25px);
     width: 50px;
     height: 50px;
   }
@@ -3097,6 +3101,8 @@ h2 {
     height: 10px;
   }
   .page-about-list li:after {
+    top: -webkit-calc(50% - 10px);
+    top: calc(50% - 10px);
     width: 20px;
     height: 20px;
   }
