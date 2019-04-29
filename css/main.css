@@ -457,6 +457,44 @@ h2 {
   opacity: .4;
 }
 
+.overflow .simplebar-track {
+  width: 5px;
+  background: #141414;
+  -webkit-border-radius: 2.5px;
+          border-radius: 2.5px;
+}
+
+.overflow .simplebar-track.vertical .simplebar-scrollbar:before {
+  top: 0;
+  bottom: 0;
+}
+
+.overflow .simplebar-track.horizontal {
+  display: none;
+  width: auto;
+  height: 5px;
+}
+
+.overflow .simplebar-scrollbar {
+  right: 0;
+  width: 5px;
+}
+
+.overflow .simplebar-scrollbar:before {
+  background: #dcb36e;
+  -webkit-border-radius: 2.5px;
+          border-radius: 2.5px;
+  opacity: 1;
+}
+
+.overflow .simplebar-scrollbar.visible:before {
+  opacity: 1;
+}
+
+.overflow .simplebar-content {
+  padding: 0 30px 0 0;
+}
+
 [class*="ymaps-2"][class*="-ground-pane"] {
   -webkit-filter: grayscale(1) invert(100%);
           filter: grayscale(1) invert(100%);
@@ -986,43 +1024,6 @@ h2 {
   line-height: 24px;
 }
 
-.about-text .simplebar-track {
-  width: 5px;
-  background: #141414;
-  -webkit-border-radius: 2.5px;
-          border-radius: 2.5px;
-}
-
-.about-text .simplebar-track.vertical .simplebar-scrollbar:before {
-  top: 0;
-  bottom: 0;
-}
-
-.about-text .simplebar-track.horizontal {
-  width: auto;
-  height: 5px;
-}
-
-.about-text .simplebar-scrollbar {
-  right: 0;
-  width: 5px;
-}
-
-.about-text .simplebar-scrollbar:before {
-  background: #dcb36e;
-  -webkit-border-radius: 2.5px;
-          border-radius: 2.5px;
-  opacity: 1;
-}
-
-.about-text .simplebar-scrollbar.visible:before {
-  opacity: 1;
-}
-
-.about-text .simplebar-content {
-  padding: 0 30px 0 0;
-}
-
 .about-note {
   line-height: 24px;
   margin: 70px -150px 0 0;
@@ -1550,32 +1551,20 @@ h2 {
   height: 100vh;
 }
 
-.page-full:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 50%;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 0;
-}
-
-.page-full #fullpage {
-  z-index: 1;
-}
-
-.page-program {
-  background: url("../img/page/1.jpg") no-repeat center top;
-  background-size: cover;
-}
-
 .page-program-text {
   width: 50%;
+  max-height: 360px;
   font-size: 18px;
   line-height: 30px;
-  padding: 0 135px 0 0;
   margin: 70px 0 40px;
+}
+
+.page-program-text .simplebar-track {
+  right: 30px;
+}
+
+.page-program-text .simplebar-content {
+  padding: 0 135px 0 0;
 }
 
 .page-program-info {
@@ -1613,6 +1602,41 @@ h2 {
   padding: 87px 50px;
 }
 
+.page-row {
+  position: relative;
+  z-index: 1;
+}
+
+.page-title {
+  width: 50%;
+  font: 68px/56px "TTBluescreensBold", sans-serif;
+}
+
+.page-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.page-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .page-animation {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -1640,11 +1664,6 @@ h2 {
 .page-animation.page-program-btn {
   -webkit-transition-delay: .2s;
           transition-delay: .2s;
-}
-
-.page-title {
-  width: 50%;
-  font: 68px/56px "TTBluescreensBold", sans-serif;
 }
 
 .page-pagination {
@@ -2056,15 +2075,18 @@ h2 {
     height: 25px;
     margin: 0 10px;
   }
-  .page-full:after {
-    right: 40%;
-  }
   .page-program-text {
     width: 60%;
+    max-height: 261px;
     font-size: 16px;
     line-height: 24px;
-    padding: 0 50px 0 0;
     margin: 50px 0 20px;
+  }
+  .page-program-text .simplebar-track {
+    right: 15px;
+  }
+  .page-program-text .simplebar-content {
+    padding: 0 50px 0 0;
   }
   .page-program-info {
     font-size: 16px;
@@ -2086,6 +2108,9 @@ h2 {
   }
   .page-title {
     font-size: 60px;
+  }
+  .page-img:after {
+    right: 40%;
   }
   .page-pagination {
     top: -webkit-calc(46% - 80px);
@@ -2174,26 +2199,16 @@ h2 {
     width: 100%;
     height: auto;
   }
-  .page-full:after {
-    right: 0;
-  }
   .page-program {
     background: none;
   }
-  .page-program .page-section {
-    background: url(../img/page/1.jpg) no-repeat center top fixed;
-    background-size: auto 100%;
-  }
   .page-program-text {
     width: 100%;
+    max-height: 100%;
     line-height: 30px;
   }
   .page-program-info {
     line-height: 30px;
-  }
-  .page-program-btn {
-    position: relative;
-    z-index: 2;
   }
   .page-section {
     -webkit-box-orient: vertical;
@@ -2216,6 +2231,9 @@ h2 {
   .page-title {
     width: 100%;
     margin: 80px 0 0;
+  }
+  .page-img:after {
+    right: 0;
   }
   .page-pagination {
     display: none;
@@ -2759,6 +2777,12 @@ h2 {
     line-height: 24px;
     padding: 0;
     margin: 20px 0;
+  }
+  .page-program-text .simplebar-track {
+    right: 0;
+  }
+  .page-program-text .simplebar-content {
+    padding: 0;
   }
   .page-program-info {
     font-size: 14px;

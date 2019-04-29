@@ -7,7 +7,9 @@ $(document).ready(function() {
 	var animationIsFinished = false;
 	$('#fullpage').fullpage({
 		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		//scrollingSpeed: 500,
 		sectionSelector: '.page-section',
+		normalScrollElements: '.overflow',
 		verticalCentered: false,
 		responsiveWidth: 1199,
 		onLeave: function(origin, destination, direction) {
