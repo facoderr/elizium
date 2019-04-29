@@ -2625,6 +2625,12 @@ h2 {
   .page-program-info {
     line-height: 30px;
   }
+  .page-reviews .page-section:not(:first-child) .page-title {
+    display: none;
+  }
+  .page-reviews .page-section:not(:first-child) .page-reviews-block {
+    margin: 0;
+  }
   .page-reviews-block {
     width: 100%;
   }
