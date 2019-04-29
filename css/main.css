@@ -1760,6 +1760,45 @@ h2 {
   margin: 0 15px 0 0;
 }
 
+.page-reviews-block {
+  width: 50%;
+  margin: 130px 0 0;
+}
+
+.page-reviews-name {
+  font: 18px/1 "GothamProMedium", sans-serif;
+  margin: 0 0 15px;
+}
+
+.page-reviews-link {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 40px;
+}
+
+.page-reviews-link a {
+  display: inline-block;
+  color: #fff;
+  border-bottom: 1px solid #dcb36e;
+}
+
+.page-reviews-link a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.page-reviews-text {
+  max-height: 300px;
+  line-height: 24px;
+}
+
+.page-reviews-text .simplebar-track {
+  right: 30px;
+}
+
+.page-reviews-text .simplebar-content {
+  padding: 0 250px 0 0;
+}
+
 .page-vacancy-text {
   width: 50%;
   max-height: 500px;
@@ -1900,12 +1939,12 @@ h2 {
           transform: translateY(30px);
 }
 
-.page-animation.page-about-text, .page-animation.page-about-btn, .page-animation.page-program-text, .page-animation.page-program-info, .page-animation.page-vacancy-text {
+.page-animation.page-about-text, .page-animation.page-about-btn, .page-animation.page-program-text, .page-animation.page-program-info, .page-animation.page-reviews-name, .page-animation.page-reviews-link, .page-animation.page-vacancy-text {
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
 }
 
-.page-animation.page-program-btn, .page-animation.page-vacancy-more {
+.page-animation.page-program-btn, .page-animation.page-reviews-text, .page-animation.page-vacancy-more {
   -webkit-transition-delay: .2s;
           transition-delay: .2s;
 }
@@ -2419,6 +2458,26 @@ h2 {
     height: 50px;
     font-size: 15px;
   }
+  .page-reviews-block {
+    width: 60%;
+    margin: 50px 0 0;
+  }
+  .page-reviews-name {
+    font-size: 16px;
+  }
+  .page-reviews-link {
+    margin: 0 0 30px;
+  }
+  .page-reviews-text {
+    max-height: 300px;
+    font-size: 15px;
+  }
+  .page-reviews-text .simplebar-track {
+    right: 15px;
+  }
+  .page-reviews-text .simplebar-content {
+    padding: 0 50px 0 0;
+  }
   .page-vacancy-text {
     width: 60%;
     max-height: 400px;
@@ -2565,6 +2624,13 @@ h2 {
   }
   .page-program-info {
     line-height: 30px;
+  }
+  .page-reviews-block {
+    width: 100%;
+  }
+  .page-reviews-text {
+    width: 70%;
+    max-height: 100%;
   }
   .page-vacancy-text {
     width: 100%;
@@ -2877,6 +2943,9 @@ h2 {
   }
   .page-about-btn p br {
     display: none;
+  }
+  .page-reviews-text {
+    width: 100%;
   }
   .foot-copyright {
     width: 100%;
@@ -3249,6 +3318,26 @@ h2 {
     height: 40px;
     font-size: 10px;
     margin: 5px 6.5px;
+  }
+  .page-reviews-block {
+    margin: 20px 0 0;
+  }
+  .page-reviews-name {
+    font-size: 15px;
+    margin: 0 0 10px;
+  }
+  .page-reviews-link {
+    font-size: 13px;
+    margin: 0 0 25px;
+  }
+  .page-reviews-text {
+    font-size: 14px;
+  }
+  .page-reviews-text .simplebar-track {
+    right: 0;
+  }
+  .page-reviews-text .simplebar-content {
+    padding: 0;
   }
   .page-vacancy-text {
     margin: 20px 0 30px;
