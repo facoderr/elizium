@@ -1520,7 +1520,7 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   right: 0;
-  bottom: 50px;
+  bottom: 40px;
   left: 0;
 }
 
@@ -1760,6 +1760,82 @@ h2 {
   margin: 0 15px 0 0;
 }
 
+.page-vacancy-text {
+  width: 50%;
+  max-height: 500px;
+  margin: 80px 0 50px;
+}
+
+.page-vacancy-text .simplebar-track {
+  right: 15px;
+}
+
+.page-vacancy-text .simplebar-content {
+  padding: 0 50px 0 0;
+}
+
+.page-vacancy-text p {
+  font: 18px/26px "GothamProMedium", sans-serif;
+  margin: 0 0 50px;
+}
+
+.page-vacancy-text ul {
+  position: relative;
+  padding: 0 0 0 70px;
+}
+
+.page-vacancy-text ul:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #dcb36e;
+}
+
+.page-vacancy-text ul li {
+  line-height: 32px;
+}
+
+.page-vacancy-more {
+  line-height: 32px;
+}
+
+.page-vacancy-more a {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+
+.page-vacancy-more a:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  height: 1px;
+  background: #dcb36e;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.page-vacancy-more a:hover:after {
+  background: transparent;
+}
+
+.page-vacancy ~ .page-foot .foot-row {
+  color: #161616;
+}
+
+.page-vacancy ~ .page-foot .foot-developer a {
+  color: #161616;
+}
+
+.page-vacancy ~ .page-foot .foot-developer a:hover:after {
+  background: transparent;
+}
+
 .page-section {
   padding: 87px 50px;
 }
@@ -1824,12 +1900,12 @@ h2 {
           transform: translateY(30px);
 }
 
-.page-animation.page-about-text, .page-animation.page-about-btn, .page-animation.page-program-text, .page-animation.page-program-info {
+.page-animation.page-about-text, .page-animation.page-about-btn, .page-animation.page-program-text, .page-animation.page-program-info, .page-animation.page-vacancy-text {
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
 }
 
-.page-animation.page-program-btn {
+.page-animation.page-program-btn, .page-animation.page-vacancy-more {
   -webkit-transition-delay: .2s;
           transition-delay: .2s;
 }
@@ -1875,7 +1951,7 @@ h2 {
 .page-foot {
   position: absolute;
   right: 162px;
-  bottom: 50px;
+  bottom: 40px;
   left: 378px;
   z-index: 11;
 }
@@ -2160,7 +2236,7 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1600px) {
   h1 {
     font-size: 75px;
   }
@@ -2343,6 +2419,30 @@ h2 {
     height: 50px;
     font-size: 15px;
   }
+  .page-vacancy-text {
+    width: 60%;
+    max-height: 400px;
+    margin: 50px 0 25px;
+  }
+  .page-vacancy-text p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 25px;
+  }
+  .page-vacancy-text ul:before {
+    top: 10px;
+  }
+  .page-vacancy-text ul li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .page-vacancy-text ul li:not(:last-child) {
+    margin: 0 0 5px;
+  }
+  .page-vacancy-more {
+    font-size: 15px;
+    line-height: 28px;
+  }
   .page-section {
     padding: 55px 30px;
   }
@@ -2458,9 +2558,6 @@ h2 {
     max-height: 100%;
     margin: 0 0 70px;
   }
-  .page-program {
-    background: none;
-  }
   .page-program-text {
     width: 100%;
     max-height: 100%;
@@ -2468,6 +2565,13 @@ h2 {
   }
   .page-program-info {
     line-height: 30px;
+  }
+  .page-vacancy-text {
+    width: 100%;
+    max-height: 100%;
+  }
+  .page-vacancy-text ul li:not(:last-child) {
+    margin: 0 0 10px;
   }
   .page-section {
     -webkit-box-orient: vertical;
@@ -3145,6 +3249,39 @@ h2 {
     height: 40px;
     font-size: 10px;
     margin: 5px 6.5px;
+  }
+  .page-vacancy-text {
+    margin: 20px 0 30px;
+  }
+  .page-vacancy-text .simplebar-track {
+    right: 0;
+  }
+  .page-vacancy-text .simplebar-content {
+    padding: 0;
+  }
+  .page-vacancy-text p {
+    font-size: 15px;
+    margin: 0 0 20px;
+  }
+  .page-vacancy-text p br {
+    display: none;
+  }
+  .page-vacancy-text ul {
+    padding: 0;
+  }
+  .page-vacancy-text ul:before {
+    display: none;
+  }
+  .page-vacancy-text ul li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .page-vacancy-more {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .page-vacancy-more a:after {
+    bottom: 0;
   }
   .page-section {
     padding: 75px 37px;
