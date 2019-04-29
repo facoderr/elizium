@@ -3362,15 +3362,26 @@ h2 {
     display: none;
   }
   .page-vacancy-text ul li {
+    position: relative;
     font-size: 13px;
     line-height: 18px;
+    padding: 0 0 0 20px;
+  }
+  .page-vacancy-text ul li:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    background: #dcb36e;
   }
   .page-vacancy-more {
     font-size: 14px;
     line-height: 24px;
   }
   .page-vacancy-more a:after {
-    bottom: 0;
+    bottom: 3px;
   }
   .page-section {
     padding: 75px 37px;
