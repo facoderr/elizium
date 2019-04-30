@@ -9,39 +9,12 @@
 }
 
 @font-face {
-  font-family: "GothamProBold";
-  font-weight: normal;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  src: url("../fonts/GothamProBold/GothamProBold.eot");
-  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "GothamProMedium";
   font-weight: normal;
   font-style: normal;
   text-rendering: optimizeLegibility;
   src: url("../fonts/GothamProMedium/GothamProMedium.eot");
   src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "TTBluescreensBold";
-  font-weight: normal;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  src: url("../fonts/TTBluescreensBold/TTBluescreensBold.eot");
-  src: url("../fonts/TTBluescreensBold/TTBluescreensBold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTBluescreensBold/TTBluescreensBold.woff") format("woff"), url("../fonts/TTBluescreensBold/TTBluescreensBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "DINCondensedC";
-  font-weight: normal;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  src: url("../fonts/DINCondensedC/DINCondensedC.eot");
-  src: url("../fonts/DINCondensedC/DINCondensedC.eot?#iefix") format("embedded-opentype"), url("../fonts/DINCondensedC/DINCondensedC.woff") format("woff"), url("../fonts/DINCondensedC/DINCondensedC.ttf") format("truetype");
 }
 
 /* -- End Fonts -- */

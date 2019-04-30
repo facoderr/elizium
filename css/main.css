@@ -94,39 +94,12 @@ input::placeholder, textarea::placeholder {
 }
 
 @font-face {
-  font-family: "GothamProBold";
-  font-weight: normal;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  src: url("../fonts/GothamProBold/GothamProBold.eot");
-  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "GothamProMedium";
   font-weight: normal;
   font-style: normal;
   text-rendering: optimizeLegibility;
   src: url("../fonts/GothamProMedium/GothamProMedium.eot");
   src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "TTBluescreensBold";
-  font-weight: normal;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  src: url("../fonts/TTBluescreensBold/TTBluescreensBold.eot");
-  src: url("../fonts/TTBluescreensBold/TTBluescreensBold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTBluescreensBold/TTBluescreensBold.woff") format("woff"), url("../fonts/TTBluescreensBold/TTBluescreensBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "DINCondensedC";
-  font-weight: normal;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  src: url("../fonts/DINCondensedC/DINCondensedC.eot");
-  src: url("../fonts/DINCondensedC/DINCondensedC.eot?#iefix") format("embedded-opentype"), url("../fonts/DINCondensedC/DINCondensedC.woff") format("woff"), url("../fonts/DINCondensedC/DINCondensedC.ttf") format("truetype");
 }
 
 /* -- End Fonts -- */
@@ -255,12 +228,12 @@ body {
 }
 
 h1 {
-  font: 102px/1 "TTBluescreensBold", sans-serif;
+  font: 102px/1 "Playfair Display", serif;
   text-transform: uppercase;
 }
 
 h2 {
-  font: 68px/1 "TTBluescreensBold", sans-serif;
+  font: 68px/1 "Playfair Display", serif;
   text-transform: uppercase;
 }
 
@@ -572,7 +545,7 @@ h2 {
   position: relative;
   display: block;
   color: #fff;
-  font: 36px/48px "TTBluescreensBold", sans-serif;
+  font: 36px/48px "Playfair Display", serif;
 }
 
 .nav-menu-link:after {
@@ -748,7 +721,7 @@ h2 {
 }
 
 .main-discount-percent {
-  font: 102px/72px "TTBluescreensBold", sans-serif;
+  font: 102px/72px "Playfair Display", serif;
   opacity: .1;
 }
 
@@ -1424,7 +1397,7 @@ h2 {
 
 .contacts-item span {
   display: block;
-  font: 46px/1 "TTBluescreensBold", sans-serif;
+  font: 46px/1 "Playfair Display", serif;
   margin: 0 0 10px;
 }
 
@@ -1887,7 +1860,7 @@ h2 {
 
 .page-title {
   width: 50%;
-  font: 68px/56px "TTBluescreensBold", sans-serif;
+  font: 68px/56px "Playfair Display", serif;
 }
 
 .page-img {
@@ -2070,7 +2043,7 @@ h2 {
 }
 
 .popup-call-title {
-  font: 48px/58px "TTBluescreensBold", sans-serif;
+  font: 48px/58px "Playfair Display", serif;
   margin: 0 0 10px;
 }
 
