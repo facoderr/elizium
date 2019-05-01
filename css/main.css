@@ -1458,9 +1458,9 @@ h2 {
 }
 
 .page-nav .nav-menu-link {
-  font-size: 32px;
-  line-height: 56px;
-  padding: 0 48px;
+  font-size: 18px;
+  line-height: 44px;
+  padding: 0 40px;
 }
 
 .page-nav .nav-menu-link:after {
@@ -1858,7 +1858,8 @@ h2 {
 
 .page-title {
   width: 50%;
-  font: 68px/56px "Playfair Display", serif;
+  font: 42px/34px "Playfair Display", serif;
+  padding: 11px 0;
 }
 
 .page-img {
@@ -2325,8 +2326,7 @@ h2 {
     padding: 50px 0;
   }
   .page-nav .nav-menu-link {
-    font-size: 28px;
-    padding: 0 40px;
+    padding: 0 30px;
   }
   .page-socials {
     bottom: 30px;
@@ -2484,7 +2484,7 @@ h2 {
     padding: 55px 30px;
   }
   .page-title {
-    font-size: 60px;
+    font-size: 35px;
   }
   .page-img:after {
     right: 40%;
@@ -2806,7 +2806,7 @@ h2 {
     width: calc(100% / 2);
   }
   .page-title {
-    font-size: 55px;
+    font-size: 32px;
   }
   .foot {
     padding: 50px 0;
@@ -2951,7 +2951,7 @@ h2 {
     line-height: 55px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 34px;
   }
   .input {
@@ -3061,9 +3061,6 @@ h2 {
   .about-title {
     margin: 0 0 15px;
   }
-  .about-title h2 {
-    line-height: 1;
-  }
   .about-text {
     max-height: 280px;
     font-size: 14px;
@@ -3081,7 +3078,7 @@ h2 {
     margin: 0 0 25px;
   }
   .program-title h2 {
-    line-height: 1;
+    font-size: 21px;
   }
   .program-slider {
     padding: 0;
@@ -3113,9 +3110,6 @@ h2 {
   .interior-title {
     margin: 0 0 30px;
   }
-  .interior-title h2 {
-    line-height: 1;
-  }
   .interior-slider .slick-dots {
     bottom: -30px;
   }
@@ -3136,7 +3130,7 @@ h2 {
   }
   .discount-title h2 {
     font-size: 23px;
-    line-height: 40px;
+    line-height: 35px;
   }
   .discount-title h2 br {
     display: none;
@@ -3179,7 +3173,7 @@ h2 {
   .contacts {
     height: 460px;
     min-height: auto;
-    padding: 55px 0;
+    padding: 70px 0;
   }
   .contacts-row {
     height: auto;
@@ -3190,7 +3184,7 @@ h2 {
     min-height: auto;
   }
   .contacts-title {
-    margin: 0 0 40px;
+    margin: 0 0 50px;
   }
   .contacts-title h2 {
     line-height: 1;
@@ -3199,7 +3193,7 @@ h2 {
     font-size: 14px;
   }
   .contacts-item:not(:last-child) {
-    margin: 0 0 35px;
+    margin: 0 0 40px;
   }
   .contacts-item span {
     font-size: 18px;
@@ -3372,7 +3366,7 @@ h2 {
     padding: 75px 37px;
   }
   .page-title {
-    font-size: 42px;
+    font-size: 25px;
     margin: 15px 0 0;
   }
   .popup-call-title {
