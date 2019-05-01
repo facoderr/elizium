@@ -1852,11 +1852,29 @@ h2 {
 
 .page-row {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   height: 100%;
   z-index: 1;
 }
 
 .page-title {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
   width: 50%;
   font: 42px/34px "Playfair Display", serif;
   padding: 11px 0;
@@ -2042,7 +2060,7 @@ h2 {
 }
 
 .popup-call-title {
-  font: 48px/58px "Playfair Display", serif;
+  font: 36px/58px "Playfair Display", serif;
   margin: 0 0 10px;
 }
 
@@ -3370,7 +3388,7 @@ h2 {
     margin: 15px 0 0;
   }
   .popup-call-title {
-    font-size: 42px;
+    font-size: 25px;
     margin: 0 0 5px;
   }
   .popup-call-subtitle {
