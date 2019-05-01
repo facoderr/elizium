@@ -1852,22 +1852,6 @@ h2 {
 
 .page-row {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-flow: wrap;
-      -ms-flex-flow: wrap;
-          flex-flow: wrap;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  height: 100%;
   z-index: 1;
 }
 
@@ -2823,6 +2807,24 @@ h2 {
     width: -webkit-calc(100% / 2);
     width: calc(100% / 2);
   }
+  .page-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    height: 100%;
+  }
   .page-title {
     font-size: 32px;
   }
@@ -3395,6 +3397,9 @@ h2 {
     font-size: 14px;
     line-height: 16px;
   }
+  .popup-call-subtitle br {
+    display: none;
+  }
   .popup-call-form input {
     width: 200px;
     height: 34px;
@@ -3426,6 +3431,12 @@ h2 {
     width: 25px;
     height: 25px;
     margin: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .popup-call-subtitle br {
+    display: block;
   }
 }
 
