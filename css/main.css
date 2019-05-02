@@ -1523,7 +1523,7 @@ h2 {
 }
 
 .page-about-text {
-  width: 50%;
+  width: 100%;
   max-height: 540px;
   line-height: 24px;
   margin: 120px 0 0;
@@ -1563,6 +1563,7 @@ h2 {
           flex-flow: wrap;
   height: 100%;
   padding: 100px 112px 0 0;
+  margin: 0 -100% 0 0;
 }
 
 .page-about-box {
@@ -1570,11 +1571,6 @@ h2 {
   width: calc(100% / 3);
   text-align: center;
   margin: 30px 0;
-}
-
-.page-about-box:nth-child(n+4).page-animation {
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
 }
 
 .page-about-box-icon {
@@ -1604,7 +1600,7 @@ h2 {
 }
 
 .page-about-list {
-  width: 50%;
+  width: 100%;
   max-height: 450px;
   line-height: 20px;
   margin: 150px 0 75px;
@@ -1684,8 +1680,62 @@ h2 {
   margin: 0 70px 0 0;
 }
 
+.page-masters-block {
+  width: 100%;
+  margin: 120px 0 0;
+}
+
+.page-masters-name {
+  position: relative;
+  font: 32px/1 "GothamProMedium", sans-serif;
+  padding: 0 0 30px;
+  margin: 0 0 25px;
+}
+
+.page-masters-name:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 5px;
+  background: #dcb36e;
+}
+
+.page-masters-feature {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0 0;
+}
+
+.page-masters-feature-item {
+  text-align: center;
+  margin: 0 70px 0 0;
+}
+
+.page-masters-feature-item span {
+  display: block;
+  font: 60px/56px "Playfair Display", serif;
+  margin: 0 0 25px;
+}
+
+.page-masters-text {
+  max-height: 250px;
+  line-height: 24px;
+}
+
+.page-masters-text .simplebar-track {
+  right: 30px;
+}
+
+.page-masters-text .simplebar-content {
+  padding: 0 290px 0 0;
+}
+
 .page-program-text {
-  width: 50%;
+  width: 100%;
   max-height: 360px;
   font-size: 18px;
   line-height: 30px;
@@ -1732,7 +1782,7 @@ h2 {
 }
 
 .page-reviews-block {
-  width: 50%;
+  width: 100%;
   margin: 130px 0 0;
 }
 
@@ -1771,7 +1821,7 @@ h2 {
 }
 
 .page-vacancy-text {
-  width: 50%;
+  width: 100%;
   max-height: 500px;
   margin: 80px 0 50px;
 }
@@ -1852,6 +1902,7 @@ h2 {
 
 .page-row {
   position: relative;
+  width: 50%;
   z-index: 1;
 }
 
@@ -1859,7 +1910,7 @@ h2 {
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
-  width: 50%;
+  width: 100%;
   font: 42px/34px "Playfair Display", serif;
   padding: 11px 0;
 }
@@ -1880,7 +1931,7 @@ h2 {
   right: 50%;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .page-img-full:after {
@@ -1913,12 +1964,12 @@ h2 {
           transform: translateY(30px);
 }
 
-.page-animation.page-about-text, .page-animation.page-about-btn, .page-animation.page-program-text, .page-animation.page-program-info, .page-animation.page-reviews-name, .page-animation.page-reviews-link, .page-animation.page-vacancy-text {
+.page-animation-delayOne {
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
 }
 
-.page-animation.page-program-btn, .page-animation.page-reviews-text, .page-animation.page-vacancy-more {
+.page-animation-delayTwo {
   -webkit-transition-delay: .2s;
           transition-delay: .2s;
 }
@@ -2339,7 +2390,6 @@ h2 {
     margin: 0 10px;
   }
   .page-about-text {
-    width: 60%;
     max-height: 420px;
     margin: 50px 0 0;
   }
@@ -2361,6 +2411,7 @@ h2 {
   }
   .page-about-row {
     padding: 80px 50px 0 0;
+    margin: 0 -65% 0 0;
   }
   .page-about-box {
     margin: 15px 0;
@@ -2377,7 +2428,6 @@ h2 {
     margin: 0 0 10px;
   }
   .page-about-list {
-    width: 60%;
     max-height: 350px;
     font-size: 15px;
     margin: 100px 0 30px;
@@ -2410,8 +2460,34 @@ h2 {
     height: 50px;
     font-size: 15px;
   }
+  .page-masters-block {
+    margin: 50px 0 0;
+  }
+  .page-masters-name {
+    font-size: 25px;
+    padding: 0 0 20px;
+  }
+  .page-masters-name:after {
+    height: 3px;
+  }
+  .page-masters-text {
+    max-height: 200px;
+    font-size: 15px;
+  }
+  .page-masters-text .simplebar-track {
+    right: 15px;
+  }
+  .page-masters-text .simplebar-content {
+    padding: 0 100px 0 0;
+  }
+  .page-masters-feature-item {
+    font-size: 15px;
+  }
+  .page-masters-feature-item span {
+    font-size: 45px;
+    line-height: 40px;
+  }
   .page-program-text {
-    width: 60%;
     max-height: 261px;
     font-size: 16px;
     line-height: 24px;
@@ -2439,7 +2515,6 @@ h2 {
     font-size: 15px;
   }
   .page-reviews-block {
-    width: 60%;
     margin: 50px 0 0;
   }
   .page-reviews-name {
@@ -2459,7 +2534,6 @@ h2 {
     padding: 0 50px 0 0;
   }
   .page-vacancy-text {
-    width: 60%;
     max-height: 400px;
     margin: 50px 0 25px;
   }
@@ -2484,6 +2558,9 @@ h2 {
   }
   .page-section {
     padding: 55px 30px;
+  }
+  .page-row {
+    width: 60%;
   }
   .page-title {
     font-size: 35px;
@@ -2586,22 +2663,33 @@ h2 {
     height: auto;
   }
   .page-about-text {
-    width: 100%;
     max-height: 100%;
   }
   .page-about-row {
     padding: 0;
+    margin: 0;
   }
   .page-about-box {
     margin: 30px 0;
   }
   .page-about-list {
-    width: 100%;
     max-height: 100%;
     margin: 0 0 70px;
   }
+  .page-masters .page-section:not(:first-child) .page-title {
+    display: none;
+  }
+  .page-masters .page-section:not(:first-child) .page-masters-block {
+    margin: 0;
+  }
+  .page-masters-text {
+    width: 70%;
+    max-height: 100%;
+  }
+  .page-masters-text .simplebar-content {
+    padding: 0 50px 0 0;
+  }
   .page-program-text {
-    width: 100%;
     max-height: 100%;
     line-height: 30px;
   }
@@ -2614,15 +2702,11 @@ h2 {
   .page-reviews .page-section:not(:first-child) .page-reviews-block {
     margin: 0;
   }
-  .page-reviews-block {
-    width: 100%;
-  }
   .page-reviews-text {
     width: 70%;
     max-height: 100%;
   }
   .page-vacancy-text {
-    width: 100%;
     max-height: 100%;
   }
   .page-vacancy-text ul li:not(:last-child) {
@@ -2646,8 +2730,10 @@ h2 {
     height: auto !important;
     padding: 100px 37px;
   }
-  .page-title {
+  .page-row {
     width: 100%;
+  }
+  .page-title {
     margin: 80px 0 0;
   }
   .page-img:after {
@@ -2947,6 +3033,9 @@ h2 {
   }
   .page-about-btn p br {
     display: none;
+  }
+  .page-masters-text {
+    width: 100%;
   }
   .page-reviews-text {
     width: 100%;
@@ -3291,6 +3380,45 @@ h2 {
     font-size: 10px;
     margin: 5px 6.5px;
   }
+  .page-masters-block {
+    margin: 20px 0 0;
+  }
+  .page-masters-name {
+    font-size: 18px;
+    padding: 0 0 15px;
+    margin: 0 0 20px;
+  }
+  .page-masters-name:after {
+    width: 30px;
+    height: 2px;
+  }
+  .page-masters-text {
+    font-size: 14px;
+  }
+  .page-masters-text .simplebar-track {
+    right: 0;
+  }
+  .page-masters-text .simplebar-content {
+    padding: 0;
+  }
+  .page-masters-feature {
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+    margin: 30px 0 0;
+  }
+  .page-masters-feature-item {
+    font-size: 13px;
+    margin: 0;
+  }
+  .page-masters-feature-item:not(:last-child) {
+    margin: 0 40px 0 0;
+  }
+  .page-masters-feature-item span {
+    font-size: 35px;
+    line-height: 30px;
+    margin: 0 0 15px;
+  }
   .page-program-text {
     font-size: 13px;
     line-height: 24px;
@@ -3435,6 +3563,15 @@ h2 {
 }
 
 @media only screen and (max-width: 359px) {
+  .page-masters-feature {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page-masters-feature-item:not(:last-child) {
+    margin: 0 20px 20px;
+  }
   .popup-call-subtitle br {
     display: block;
   }
