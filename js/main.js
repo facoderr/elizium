@@ -85,6 +85,7 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		speed: 500,
+		lazyLoad: 'ondemand',
 		responsive: [
 			{
 				breakpoint: 991,
