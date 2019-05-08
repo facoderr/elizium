@@ -1862,6 +1862,10 @@ h2 {
   margin: 0 15px 0 0;
 }
 
+.page-program .page-img img:not(:first-child) {
+  display: none;
+}
+
 .page-certificate .page-row {
   width: 100%;
 }
@@ -2839,7 +2843,7 @@ h2 {
 }
 
 .welcome-info h5 {
-  font: 24px/1 "GothamProMedium", sans-serif;
+  font: 26px/1 "Playfair Display", serif;
   margin: 0 0 30px;
 }
 
@@ -3368,7 +3372,7 @@ h2 {
     width: 140px;
   }
   .welcome-info h5 {
-    font-size: 22px;
+    font-size: 24px;
     margin: 0 0 25px;
   }
   .welcome-info p {
@@ -3805,7 +3809,7 @@ h2 {
     margin: 0 28px 0 0;
   }
   .welcome-info h5 {
-    font-size: 20px;
+    font-size: 22px;
     margin: 0 0 20px;
   }
   .welcome-info p {
@@ -3960,6 +3964,12 @@ h2 {
   }
   .page-masters-text {
     width: 100%;
+  }
+  .page-program .page-img img {
+    display: none;
+  }
+  .page-program .page-img img:not(:first-child) {
+    display: block;
   }
   .page-certificate-tabItem {
     width: 100%;
@@ -4647,27 +4657,33 @@ h2 {
     bottom: -5px;
     height: 5px;
   }
+  .welcome.open {
+    max-height: 65vh;
+  }
   .welcome.open .welcome-row {
-    padding: 30px 0 25px;
+    max-height: 65vh;
+    padding: 0;
   }
   .welcome-row {
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
     -webkit-flex-flow: wrap;
         -ms-flex-flow: wrap;
             flex-flow: wrap;
+    height: 60vh;
   }
   .welcome-img {
-    width: 50px;
-    margin: 0 0 15px;
+    width: 60px;
+    margin: 0 auto 20px;
   }
   .welcome-info {
-    width: 1005px;
+    width: 100%;
+    text-align: center;
   }
   .welcome-info h5 {
-    font-size: 16px;
-    margin: 0 0 10px;
-  }
-  .welcome-info p {
-    font-size: 12px;
+    font-size: 20px;
+    margin: 0 0 20px;
   }
   .welcome-btn {
     bottom: -20px;
