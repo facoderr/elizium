@@ -2402,12 +2402,13 @@ h2 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 15px;
-  bottom: 20px;
+  left: 5px;
+  bottom: 10px;
   font-size: 12px;
   line-height: 1;
   color: #fff;
   opacity: 0;
+  padding: 10px;
   z-index: 90;
 }
 
