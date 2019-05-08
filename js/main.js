@@ -100,6 +100,9 @@ $(document).ready(function() {
 
 	// Click Event
 
+	$(document).on('click', '.js-welcome', function() {
+		$('.welcome').toggleClass('open');
+	});
 	$(document).on('click', '.js-toggle', function() {
 		$('.nav').addClass('open');
 	});
@@ -180,6 +183,7 @@ $(document).ready(function() {
 	// Scroll Event
 
 	$(window).bind('scroll', function() {
+		$('.welcome').removeClass('open');
 		if ($(document).scrollTop() > 300) {
 			$('.totop').addClass('active');
 		} else if ($(document).scrollTop() < 300) {
