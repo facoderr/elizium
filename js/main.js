@@ -179,11 +179,24 @@ $(document).ready(function() {
 
 	// Scroll Event
 
+	$(window).bind('scroll', function() {
+		if ($(document).scrollTop() > 300) {
+			$('.totop').addClass('active');
+		} else if ($(document).scrollTop() < 300) {
+			$('.totop').removeClass('active');
+		}
+	});
 	$(document).on('click', '.js-anchor', function() {
 		var id = $(this).attr('href');
 				scroll = $(id).offset().top;
 		$('html, body').animate({
 			scrollTop: scroll
+		}, 1500);
+		return false;
+	});
+	$(document).on('click', '.js-totop', function() {
+		$('html, body').animate({
+			scrollTop: 0
 		}, 1500);
 		return false;
 	});

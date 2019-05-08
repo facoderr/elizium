@@ -2386,11 +2386,49 @@ h2 {
   margin: 0;
 }
 
-.page + .foot {
+.page ~ .foot {
   display: none;
 }
 
 /* -- End Page -- */
+/* -- Totop -- */
+.totop {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 15px;
+  bottom: 20px;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  opacity: 0;
+  z-index: 90;
+}
+
+.totop.active {
+  opacity: .8;
+}
+
+.totop.active:hover {
+  opacity: 1;
+}
+
+.totop img {
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin: 0 5px 0 0;
+}
+
+/* -- End Totop -- */
 /* -- Popup -- */
 .popup {
   position: fixed;
@@ -2553,11 +2591,18 @@ h2 {
 }
 
 .popup-phone-title {
+  color: #f2ddbf;
   font: 36px/58px "Playfair Display", serif;
+  margin: 0 0 10px;
+}
+
+.popup-phone-subtitle {
+  line-height: 24px;
+  margin: 0 0 40px;
 }
 
 .popup-phone-btn {
-  margin: 30px 0 50px;
+  margin: 0 0 50px;
 }
 
 .popup-phone-socials {
@@ -3386,7 +3431,7 @@ h2 {
   .page-foot {
     display: none;
   }
-  .page + .foot {
+  .page ~ .foot {
     display: block;
   }
   .foot-row {
@@ -3824,6 +3869,9 @@ h2 {
   .page-section #contacts-map:after {
     right: 0;
     background: rgba(0, 0, 0, 0.1);
+  }
+  .totop {
+    font-size: 14px;
   }
   .foot-copyright {
     width: 100%;
@@ -4396,14 +4444,24 @@ h2 {
     margin: 10px auto -80px;
   }
   .popup-phone-title {
-    font-size: 25px;
+    font-size: 30px;
+    margin: 0 0 5px;
+  }
+  .popup-phone-subtitle {
+    font-size: 15px;
+    margin: 0 0 30px;
   }
   .popup-phone-btn {
-    margin: 20px 0 30px;
+    margin: 0 0 30px;
+  }
+  .popup-phone-btn .btn {
+    width: 170px;
+    height: 45px;
+    font-size: 12px;
   }
   .popup-phone-socials a {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin: 0 7px;
   }
   .popup-close {
