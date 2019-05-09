@@ -540,6 +540,18 @@ h2 {
   z-index: 2;
 }
 
+.nav-logo {
+  position: relative;
+  display: none;
+  width: 80px;
+  margin: 20px auto -70px;
+  z-index: 2;
+}
+
+.nav-logo img {
+  width: 100%;
+}
+
 .nav-menu {
   position: relative;
   display: -webkit-box;
@@ -4082,6 +4094,9 @@ h2 {
     -webkit-border-radius: 25px;
             border-radius: 25px;
   }
+  .nav-logo {
+    display: block;
+  }
   .nav-menu-link {
     font-size: 18px;
     line-height: 45px;
@@ -4603,8 +4618,8 @@ h2 {
     margin: 55px auto 5px;
   }
   .popup-phone-logo {
-    width: 70px;
-    margin: 20px auto -60px;
+    width: 80px;
+    margin: 20px auto -70px;
   }
   .popup-phone-title {
     font-size: 30px;
