@@ -2579,7 +2579,7 @@ h2 {
   width: 100%;
   height: 100%;
   color: #f2ddbf;
-  background: #000;
+  background: #161616;
   text-align: center;
   z-index: 0;
 }
@@ -2587,7 +2587,7 @@ h2 {
 .popup-phone-logo {
   position: relative;
   width: 100px;
-  margin: 30px auto -130px;
+  margin: 50px auto -100px;
   z-index: 1;
 }
 
@@ -3851,7 +3851,7 @@ h2 {
   }
   .head.fixed {
     position: fixed;
-    background: #000;
+    background: #161616;
     -webkit-animation: slideDown 1s both;
             animation: slideDown 1s both;
   }
@@ -3862,7 +3862,7 @@ h2 {
     height: 130px;
   }
   .head-logo a {
-    width: 70px;
+    width: 80px;
   }
   .head-phone {
     display: none;
@@ -3940,7 +3940,7 @@ h2 {
   .page-head.fixed {
     position: fixed;
     height: 70px;
-    background: #000;
+    background: #161616;
     -webkit-animation: slideDown 1s both;
             animation: slideDown 1s both;
   }
@@ -4113,7 +4113,7 @@ h2 {
     margin: 6px 0;
   }
   .head-logo a {
-    width: 50px;
+    width: 65px;
   }
   .head-phone-mobile {
     margin: 0 -12px 0 0;
@@ -4604,7 +4604,7 @@ h2 {
   }
   .popup-phone-logo {
     width: 70px;
-    margin: 10px auto -80px;
+    margin: 20px auto -60px;
   }
   .popup-phone-title {
     font-size: 30px;
