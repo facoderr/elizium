@@ -17,6 +17,15 @@
   src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "TrueLies";
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/TrueLies/TrueLies.eot");
+  src: url("../fonts/TrueLies/TrueLies.eot?#iefix") format("embedded-opentype"), url("../fonts/TrueLies/TrueLies.woff") format("woff"), url("../fonts/TrueLies/TrueLies.ttf") format("truetype");
+}
+
 /* -- End Fonts -- */
 .slick-prev, .slick-next {
   position: absolute;
