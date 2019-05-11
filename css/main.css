@@ -592,7 +592,7 @@ h2 {
   position: relative;
   display: block;
   color: #fff;
-  font: 32px/62px "TrueLies", sans-serif;
+  font: 32px/62px "Playfair Display", serif;
 }
 
 .nav-menu-link:after {
@@ -614,6 +614,10 @@ h2 {
 
 .nav-menu-link.active:after {
   opacity: 1;
+}
+
+.nav-menu-font {
+  font-family: "TrueLies", sans-serif;
 }
 
 .nav-close {
@@ -1564,6 +1568,10 @@ h2 {
 .page-nav .nav-menu-link.active {
   color: #2e2e2e;
   background: #dcb36e;
+}
+
+.page-nav .nav-menu-font {
+  padding: 5px 40px 0;
 }
 
 .page-socials {
@@ -3299,6 +3307,7 @@ h2 {
   .page-nav {
     width: 290px;
     padding: 165px 0;
+    padding: 5px 30px 0;
   }
   .page-nav .nav-menu-link {
     padding: 0 30px;
