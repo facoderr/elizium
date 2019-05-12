@@ -11,7 +11,7 @@ ymaps.ready(function(){
 	});
 
 	myPlacemark1 = new ymaps.Placemark([53.202416, 50.120163], {
-		hintContent: 'Мужская спа-студия «Сахар»'
+		hintContent: 'Мужской спа-клуб «Сахар»'
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/icons/map.svg',
@@ -19,7 +19,7 @@ ymaps.ready(function(){
 		iconImageOffset: [-25, -55]
 	});
 	myPlacemark2 = new ymaps.Placemark([53.202416, 50.120163], {
-		hintContent: 'Мужская спа-студия «Сахар»'
+		hintContent: 'Мужской спа-клуб «Сахар»'
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/icons/map.svg',

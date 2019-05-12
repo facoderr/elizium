@@ -2829,6 +2829,7 @@ h2 {
 }
 
 .popup-phone-btn {
+  display: none;
   margin: 0 0 50px;
 }
 

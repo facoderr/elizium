@@ -7,7 +7,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Мужской SPA-салон «Сахар»</title>
+	<title>Мужской SPA-клуб «Сахар»</title>
 	<meta name="description" content="">
 
 	<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
@@ -45,7 +45,7 @@
 							<a href="index.html" class="nav-menu-link">Главная</a>
 						</li>
 						<li class="nav-menu-item">
-							<a href="about.html" class="nav-menu-link">О салоне</a>
+							<a href="about.html" class="nav-menu-link">О клубе</a>
 						</li>
 						<li class="nav-menu-item">
 							<a href="masters.html" class="nav-menu-link">Мастера</a>
@@ -458,7 +458,7 @@
 							</div>
 							<div class="page-services-box-body">
 								<div class="page-services-box-line">
-									<div class="page-services-box-name">Закрытие салона, аренда лимузина на 3 часа, 6 бутылок шампанского,
+									<div class="page-services-box-name">Закрытие клуба, аренда лимузина на 3 часа, 6 бутылок шампанского,
 									фетиш-сюрпризы, масса позитива и эротики</div>
 									<ul>
 										<li>55 000 ₽</li>
@@ -536,7 +536,7 @@
 		<div class="page-foot">
 			<div class="foot-row">
 				<div class="foot-copyright">
-					Мужской SPA-салон «Сахар» © 2019. Официальный сайт
+					Мужской SPA-клуб «Сахар» © 2019. Официальный сайт
 				</div>
 				<div class="foot-privacy">
 					Политика конфиденциальности
@@ -563,7 +563,7 @@
 				<div class="col">
 					<div class="foot-row">
 						<div class="foot-copyright">
-							Мужской SPA-салон «Сахар»<br>
+							Мужской SPA-клуб «Сахар»<br>
 							© 2019. Официальный сайт
 						</div>
 						<div class="foot-privacy">
@@ -662,6 +662,23 @@
 	<script src="js/main.js"></script>
 
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src="js/map.js"></script>
+	<script>
+		ymaps.ready(function(){
+			var navMap = new ymaps.Map('nav-map', {
+				center: [53.202416, 50.120163],
+				zoom: 14,
+				controls: []
+			});
+			myPlacemark1 = new ymaps.Placemark([53.202416, 50.120163], {
+				hintContent: 'Мужской спа-клуб «Сахар»'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/icons/map.svg',
+				iconImageSize: [50, 62],
+				iconImageOffset: [-25, -55]
+			});
+			navMap.geoObjects.add(myPlacemark1);
+		});
+	</script>
 </body>
 </html>
