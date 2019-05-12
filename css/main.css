@@ -3100,6 +3100,20 @@ h2 {
   margin: 15px 0 0;
 }
 
+.welcome-close {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.welcome-close img {
+  width: 100%;
+  height: 100%;
+}
+
 /* -- End Welcome -- */
 /* -- Footer -- */
 .foot {
@@ -4095,6 +4109,10 @@ h2 {
     height: 19px;
     margin: 10px 0 0;
   }
+  .welcome-close {
+    width: 25px;
+    height: 25px;
+  }
   .foot {
     padding: 50px 0;
   }
@@ -5018,6 +5036,12 @@ h2 {
   .welcome-btn img {
     width: 9px;
     height: 12px;
+  }
+  .welcome-close {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 20px auto 0;
   }
   .foot {
     padding: 30px 0;
