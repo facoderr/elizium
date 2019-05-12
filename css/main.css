@@ -709,6 +709,10 @@ h2 {
   margin: 0 0 0 30px;
 }
 
+.head-logo {
+  margin: 0 38px 0 0;
+}
+
 .head-logo a {
   display: block;
   width: 120px;
@@ -1527,6 +1531,7 @@ h2 {
       -ms-flex-positive: 2;
           flex-grow: 2;
   padding: 0 0 0 95px;
+  margin: 0;
 }
 
 .page-nav {
@@ -3322,10 +3327,12 @@ h2 {
   .page-nav {
     width: 290px;
     padding: 165px 0;
-    padding: 5px 30px 0;
   }
   .page-nav .nav-menu-link {
     padding: 0 30px;
+  }
+  .page-nav .nav-menu-font {
+    padding: 5px 30px 0;
   }
   .page-socials {
     bottom: 30px;
@@ -3648,6 +3655,13 @@ h2 {
   .head-address {
     display: none;
   }
+  .head-logo {
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    margin: 0 0 0 50px;
+  }
   .head-logo a {
     width: 100px;
   }
@@ -3707,11 +3721,8 @@ h2 {
     display: block;
   }
   .page-head .head-logo {
-    -webkit-box-flex: initial;
-    -webkit-flex-grow: initial;
-        -ms-flex-positive: initial;
-            flex-grow: initial;
     padding: 0;
+    margin: 0 0 0 50px;
   }
   .page-nav {
     display: none;
@@ -4155,6 +4166,13 @@ h2 {
   .head-row {
     height: 130px;
   }
+  .head-logo {
+    -webkit-box-flex: initial;
+    -webkit-flex-grow: initial;
+        -ms-flex-positive: initial;
+            flex-grow: initial;
+    margin: 0;
+  }
   .head-logo a {
     width: 80px;
   }
@@ -4237,6 +4255,13 @@ h2 {
     background: #161616;
     -webkit-animation: slideDown 1s both;
             animation: slideDown 1s both;
+  }
+  .page-head .head-logo {
+    -webkit-box-flex: initial;
+    -webkit-flex-grow: initial;
+        -ms-flex-positive: initial;
+            flex-grow: initial;
+    margin: 0;
   }
   .page-about-text h3 {
     font-size: 18px;
