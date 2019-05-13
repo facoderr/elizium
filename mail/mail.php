@@ -1,8 +1,7 @@
 <?php
 
 	$from = 'support@sahar-spa.ru';
-	$to  = 'farkhad.r@rambler.ru';
-	//$to  = 'info@sahar-spa.ru';
+	$to  = 'info@sahar-spa.ru';
 
 	$name = trim($_POST['name']);
 	$phone = trim($_POST['phone']);
