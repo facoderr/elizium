@@ -456,12 +456,12 @@
 							</h2>
 						</div>
 						<div class="discount-form">
-							<form action="/">
+							<form>
 								<div class="field">
 									<div class="field-line">
 										<div class="field-label">Введите имя:</div>
 										<div class="input">
-											<input type="text" name="name" autocomplete="off">
+											<input type="text" name="name" autocomplete="off" required>
 											<span>
 												<img src="img/icons/user.png">
 											</span>
@@ -470,7 +470,7 @@
 									<div class="field-line">
 										<div class="field-label">Введите Ваш телефон:</div>
 										<div class="input">
-											<input type="tel" name="phone" autocomplete="off">
+											<input type="tel" name="phone" autocomplete="off" required>
 											<span>
 												<img src="img/icons/phone.png">
 											</span>
@@ -544,7 +544,7 @@
 						</div>
 						<div class="foot-privacy">
 							Политика конфиденциальности<br>
-							Разработка сайта — <a href="/">Дыбенко</a>
+							Разработка сайта — <a href="/">R'P Production</a>
 						</div>
 						<div class="foot-socials">
 							<div class="foot-socials-label">Мы в соц. сетях:</div>
@@ -579,9 +579,9 @@
 				в течение 15 минут
 			</div>
 			<div class="popup-call-form">
-				<form action="/">
-					<input type="text" placeholder="Ваше имя">
-					<input type="tel" placeholder="+7 (999) 999-99-99">
+				<form>
+					<input type="text" placeholder="Ваше имя" autocomplete="off" required>
+					<input type="tel" placeholder="+7 (999) 999-99-99" autocomplete="off" required>
 					<button type="submit" class="btn">Отправить</button>
 				</form>
 			</div>
@@ -669,5 +669,18 @@
 
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/map.js"></script>
+
+	<script>
+		$('.form').submit(function() {
+			$.ajax({
+				type: 'POST',
+				url: 'mail/mail.php',
+				data: $(this).serialize()
+			}).done(function() {
+				location.reload();
+			});
+			return false;
+		});
+	</script>
 </body>
 </html>

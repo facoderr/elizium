@@ -249,7 +249,7 @@
 					Политика конфиденциальности
 				</div>
 				<div class="foot-developer">
-					Разработка сайта — <a href="/">Дыбенко</a>
+					Разработка сайта — <a href="/">R'P Production</a>
 				</div>
 			</div>
 		</div>
@@ -275,7 +275,7 @@
 						</div>
 						<div class="foot-privacy">
 							Политика конфиденциальности<br>
-							Разработка сайта — <a href="/">Дыбенко</a>
+							Разработка сайта — <a href="/">R'P Production</a>
 						</div>
 						<div class="foot-socials">
 							<div class="foot-socials-label">Мы в соц. сетях:</div>
@@ -310,9 +310,9 @@
 				в течение 15 минут
 			</div>
 			<div class="popup-call-form">
-				<form action="/">
-					<input type="text" placeholder="Ваше имя">
-					<input type="tel" placeholder="+7 (999) 999-99-99">
+				<form>
+					<input type="text" placeholder="Ваше имя" autocomplete="off" required>
+					<input type="tel" placeholder="+7 (999) 999-99-99" autocomplete="off" required>
 					<button type="submit" class="btn">Отправить</button>
 				</form>
 			</div>
@@ -385,6 +385,16 @@
 				iconImageOffset: [-25, -55]
 			});
 			navMap.geoObjects.add(myPlacemark1);
+		});
+		$('.form').submit(function() {
+			$.ajax({
+				type: 'POST',
+				url: 'mail/mail.php',
+				data: $(this).serialize()
+			}).done(function() {
+				location.reload();
+			});
+			return false;
 		});
 	</script>
 </body>
