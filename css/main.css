@@ -1839,7 +1839,7 @@ h2 {
 
 .page-program-text {
   width: 100%;
-  max-height: 360px;
+  max-height: 320px;
   font-size: 18px;
   line-height: 30px;
   margin: 70px 0 40px;
@@ -1865,10 +1865,45 @@ h2 {
   -webkit-flex-flow: wrap;
       -ms-flex-flow: wrap;
           flex-flow: wrap;
+  width: 100%;
 }
 
 .page-program-double .page-program-info:first-child {
   margin: 0 100px 20px 0;
+}
+
+.page-program-quad {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+  width: 100%;
+}
+
+.page-program-quad-title {
+  width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 10px;
+}
+
+.page-program-quad .page-program-info {
+  margin: 0 0 20px;
+}
+
+.page-program-quad .page-program-info:not(:last-child) {
+  margin: 0 100px 20px 0;
+}
+
+.page-program-quad + .page-program-btn {
+  margin: 30px 0 0;
 }
 
 .page-program-info {
@@ -3441,7 +3476,7 @@ h2 {
     line-height: 40px;
   }
   .page-program-text {
-    max-height: 261px;
+    max-height: 161px;
     font-size: 16px;
     line-height: 24px;
     margin: 50px 0 20px;
@@ -3451,6 +3486,10 @@ h2 {
   }
   .page-program-text .simplebar-content {
     padding: 0 50px 0 0;
+  }
+  .page-program-quad-title {
+    font-size: 16px;
+    line-height: 20px;
   }
   .page-program-info {
     font-size: 16px;
@@ -3762,6 +3801,10 @@ h2 {
     max-height: 100%;
     line-height: 30px;
   }
+  .page-program-quad-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .page-program-info {
     line-height: 30px;
   }
@@ -4002,6 +4045,12 @@ h2 {
     width: calc(100% / 2);
   }
   .page-program-double .page-program-info:first-child {
+    margin: 0 0 15px;
+  }
+  .page-program-quad .page-program-info {
+    margin: 0 0 15px;
+  }
+  .page-program-quad .page-program-info:not(:last-child) {
     margin: 0 0 15px;
   }
   .page-program-info {
@@ -4768,6 +4817,10 @@ h2 {
   }
   .page-program-mobile .page-program-time {
     width: 100%;
+  }
+  .page-program-quad-title {
+    font-size: 14px;
+    line-height: 16px;
   }
   .page-program-info {
     font-size: 14px;
