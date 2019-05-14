@@ -2457,6 +2457,14 @@ h2 {
   color: #161616;
 }
 
+.page-vacancy ~ .page-foot .foot-privacy a:first-child {
+  color: #161616;
+}
+
+.page-vacancy ~ .page-foot .foot-privacy a:first-child:hover {
+  color: #dcb36e;
+}
+
 .page-vacancy ~ .page-foot .foot-developer a {
   color: #161616;
 }
@@ -2650,6 +2658,14 @@ h2 {
 
 .page-foot .foot-privacy {
   margin: 0;
+}
+
+.page-foot .foot-privacy a:first-child {
+  color: #7a7a7a;
+}
+
+.page-foot .foot-privacy a:first-child:hover {
+  color: #dcb36e;
 }
 
 .page ~ .foot {
@@ -3186,13 +3202,25 @@ h2 {
   margin: 0 90px;
 }
 
-.foot-privacy a {
+.foot-privacy a:first-child {
+  color: #333333;
+}
+
+.foot-privacy a:first-child:hover {
+  color: #dcb36e;
+}
+
+.foot-privacy span {
+  display: block;
+}
+
+.foot-privacy span a {
   display: inline-block;
   position: relative;
   color: #333333;
 }
 
-.foot-privacy a:after {
+.foot-privacy span a:after {
   content: '';
   position: absolute;
   left: 0;
@@ -3204,11 +3232,11 @@ h2 {
   transition: all .3s ease-in-out;
 }
 
-.foot-privacy a:hover {
+.foot-privacy span a:hover {
   color: #dcb36e;
 }
 
-.foot-privacy a:hover:after {
+.foot-privacy span a:hover:after {
   background: #dcb36e;
 }
 
