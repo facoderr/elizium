@@ -3188,14 +3188,30 @@ h2 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 185px;
   color: #333333;
   font-size: 16px;
   line-height: 24px;
+}
+
+.foot-logo {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.foot-logo a {
+  display: block;
+  width: 100px;
+}
+
+.foot-logo a img {
+  width: 100%;
 }
 
 .foot-privacy {
@@ -3924,14 +3940,8 @@ h2 {
   .page ~ .foot {
     display: block;
   }
-  .foot-row {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .foot-privacy {
-    margin: 0;
+    margin: 0 50px;
   }
 }
 
@@ -4211,6 +4221,13 @@ h2 {
             flex-flow: wrap;
     height: auto;
   }
+  .foot-logo {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .foot-logo a {
+    margin: 0 auto;
+  }
   .foot-socials {
     width: 100%;
     text-align: center;
@@ -4431,6 +4448,9 @@ h2 {
   .welcome-btn img {
     width: 12px;
     height: 16px;
+  }
+  .foot-logo a {
+    width: 85px;
   }
   .foot-copyright {
     width: 100%;
@@ -5156,6 +5176,12 @@ h2 {
   .foot-row {
     font-size: 14px;
     line-height: 16px;
+  }
+  .foot-logo {
+    margin: 0 0 20px;
+  }
+  .foot-logo a {
+    width: 70px;
   }
   .foot-privacy, .foot-socials {
     margin: 20px 0 0;
