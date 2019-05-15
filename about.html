@@ -321,7 +321,9 @@
 				<form>
 					<input type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
 					<input type="tel" name="phone" placeholder="+7 (999) 999-99-99" autocomplete="off" required>
-					<button type="submit" class="btn">Отправить</button>
+					<button type="submit" class="btn" onclick="yaCounter50505493.reachGoal('zvonok'); return true;">
+						Отправить
+					</button>
 				</form>
 			</div>
 		</div>
@@ -342,6 +344,20 @@
 				<a href="javascript:void(0);" class="btn js-call">Перезвонить мне</a>
 			</div>
 			<div class="popup-phone-socials"></div>
+		</div>
+		<div class="popup-close js-close">
+			<img src="img/icons/close.svg">
+		</div>
+	</div>
+	<div class="popup for-excellent">
+		<div class="popup-excellent-logo">
+			<img src="img/logo.png">
+		</div>
+		<div class="popup-excellent">
+			<div class="popup-excellent-title">Спасибо!</div>
+			<div class="popup-excellent-subtitle">
+				C Вами свяжутся в ближайшее время.
+			</div>
 		</div>
 		<div class="popup-close js-close">
 			<img src="img/icons/close.svg">
@@ -400,7 +416,10 @@
 				url: 'mail/mail.php',
 				data: $(this).serialize()
 			}).done(function() {
-				location.reload();
+				$('.popup.for-excellent').addClass('open');
+				setTimeout(function() {
+					$('.popup.for-excellent').removeClass('open');
+				}, 3000);
 			});
 			return false;
 		});

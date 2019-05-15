@@ -2737,11 +2737,7 @@ h2 {
           transform: translateY(0);
 }
 
-.popup.for-call {
-  z-index: 102;
-}
-
-.popup-call {
+.popup-call, .popup-phone, .popup-excellent {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2835,33 +2831,6 @@ h2 {
   margin: 60px auto 9px;
 }
 
-.popup-phone {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  width: 100%;
-  height: 100%;
-  color: #f2ddbf;
-  background: #161616;
-  text-align: center;
-  z-index: 0;
-}
-
 .popup-phone-logo {
   position: relative;
   width: 100px;
@@ -2919,6 +2888,27 @@ h2 {
   width: 100%;
   height: 100%;
   fill: #303030;
+}
+
+.popup-excellent-logo {
+  position: relative;
+  width: 100px;
+  margin: 50px auto -100px;
+  z-index: 1;
+}
+
+.popup-excellent-logo img {
+  width: 100%;
+}
+
+.popup-excellent-title {
+  color: #f2ddbf;
+  font: 36px/58px "Playfair Display", serif;
+  margin: 0 0 10px;
+}
+
+.popup-excellent-subtitle {
+  line-height: 24px;
 }
 
 .popup-close {
@@ -3091,6 +3081,11 @@ h2 {
   padding: 80px 0 70px;
 }
 
+.welcome.open .welcome-close {
+  opacity: 1;
+  visibility: visible;
+}
+
 .welcome-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3163,6 +3158,8 @@ h2 {
   right: 0;
   width: 38px;
   height: 38px;
+  opacity: 0;
+  visibility: hidden;
   cursor: pointer;
 }
 
@@ -5095,6 +5092,17 @@ h2 {
     height: 30px;
     margin: 0 7px;
   }
+  .popup-excellent-logo {
+    width: 80px;
+    margin: 20px auto -70px;
+  }
+  .popup-excellent-title {
+    font-size: 30px;
+    margin: 0 0 5px;
+  }
+  .popup-excellent-subtitle {
+    font-size: 15px;
+  }
   .popup-close {
     top: 26px;
     right: 24px;
@@ -5205,6 +5213,12 @@ h2 {
   }
   .popup-call-subtitle br {
     display: block;
+  }
+  .popup-excellent-title {
+    font-size: 28px;
+  }
+  .popup-excellent-subtitle {
+    font-size: 14px;
   }
   .warning-block-btn {
     -webkit-box-orient: vertical;
