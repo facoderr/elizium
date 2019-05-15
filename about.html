@@ -416,9 +416,10 @@
 				url: 'mail/mail.php',
 				data: $(this).serialize()
 			}).done(function() {
+				$('form input').val('');
 				$('.popup.for-excellent').addClass('open');
 				setTimeout(function() {
-					$('.popup.for-excellent').removeClass('open');
+					$('.popup').removeClass('open');
 				}, 3000);
 			});
 			return false;
