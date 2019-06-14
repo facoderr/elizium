@@ -50,6 +50,7 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		swipeToSlide: true,
 		touchThreshold: 20,
+		lazyLoad: 'ondemand',
 		speed: 500
 	});
 	$('.program-slider').slick({
@@ -94,6 +95,28 @@ $(document).ready(function() {
 				}
 			}
 		]
+	});
+
+	//
+
+	// Gallery Event
+
+	$('.page-masters-gallery').each(function() {
+		$(this).magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			closeOnContentClick: false,
+			closeBtnInside: false,
+			removalDelay: 300,
+			mainClass: 'mfp-fade',
+			image: {
+				verticalFit: true
+			},
+			gallery: {
+				enabled: true,
+				preload: [0, 1]
+			}
+		});
 	});
 
 	//
