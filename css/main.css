@@ -2608,12 +2608,21 @@ h2 {
 }
 
 .page-title {
+  position: relative;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
   width: 100%;
   font: 42px/34px "Playfair Display", serif;
   padding: 11px 0;
+}
+
+.page-title p {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  color: #dcb36e;
+  font: 13px/1.2 "GothamProMedium", sans-serif;
 }
 
 .page-img {
@@ -4006,6 +4015,12 @@ h2 {
   .page-title {
     margin: 80px 0 0;
   }
+  .page-title p {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 10px 0 0;
+  }
   .page-img:after {
     right: 0;
   }
@@ -5128,6 +5143,9 @@ h2 {
   .page-title {
     font-size: 25px;
     margin: 15px 0 0;
+  }
+  .page-title p {
+    font-size: 10px;
   }
   .popup-call-title {
     font-size: 25px;
